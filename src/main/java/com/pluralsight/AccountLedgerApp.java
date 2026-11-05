@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.Scanner;
 
 public class AccountLedgerApp {
@@ -23,7 +25,53 @@ public class AccountLedgerApp {
             // Read the user's choice and convert it to uppercase.
             // This allows the user to enter either d or D, for example.
             String choice = myScanner.nextLine().toUpperCase();
+
+            switch (choice) {
+
+                case "D":
+                    // Open the method that collects and saves a deposit.
+                    addDeposit(myScanner);
+                    break;
+            }
+
         }
+
+    }
+    // This method asks for deposit information and saves it as a transaction.
+    public static void addDeposit(Scanner myScanner){
+
+        System.out.println("\n===== ADD DEPOSIT =====");
+
+        // Ask the user what the deposit is for.
+        System.out.print("Description: ");
+        String description = myScanner.nextLine();
+
+        // Ask who or where the money came from.
+        System.out.print("Vendor: ");
+        String vendor = myScanner.nextLine();
+
+        // Ask for the deposit amount and convert the text to a decimal number.
+        System.out.print("Amount: $");
+        double amount = Double.parseDouble(myScanner.nextLine());
+
+        // A deposit must be greater than zero.
+        // return ends this method if the amount is not valid.
+        if (amount <= 0) {
+            System.out.println("Please enter an amount greater than zero.");
+            return;
         }
+
+        // Create a Transaction object using the current date and time.
+        // The amount stays positive because this transaction is a deposit.
+        Transactions transaction = new Transactions(
+                LocalDate.now(),
+                LocalTime.now().withNano(0),
+                description,
+                vendor,
+                amount
+        );
+
+
+    }
 }
 
