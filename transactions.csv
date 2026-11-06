@@ -1,0 +1,100 @@
+date|time|description|vendor|amount
+2026-11-05|09:00:00|Customer payment|John|1500.00
+2026-11-05|09:15:00|Office supplies|Amazon|-89.50
+2026-11-04|10:00:00|Sales revenue|Customer A|2500.00
+2026-11-04|11:30:00|Internet bill|AT&T|-95.00
+2026-11-03|12:00:00|Office rent|Landlord|-1200.00
+2026-11-02|09:30:00|Product sale|Customer C|450.00
+2026-11-02|14:15:00|Gas expense|Shell|-65.00
+2026-11-01|10:20:00|Customer payment|David|700.00
+2026-11-01|15:00:00|Phone bill|Verizon|-80.00
+2026-10-31|09:10:00|Sales revenue|Customer D|1800.00
+2026-10-31|13:25:00|Office chairs|Staples|-250.00
+2026-10-30|08:30:00|Service income|Customer E|950.00
+2026-10-30|16:00:00|Electric bill|Power Company|-175.00
+2026-10-29|11:00:00|Product sale|Customer F|600.00
+2026-10-29|14:30:00|Marketing expense|Facebook|-120.00
+2026-10-28|09:45:00|Customer payment|Sarah|1100.00
+2026-10-28|12:20:00|Cleaning supplies|Walmart|-75.00
+2026-10-27|10:15:00|Sales revenue|Customer G|2200.00
+2026-10-27|15:45:00|Water bill|City Utilities|-60.00
+2026-10-26|08:50:00|Service payment|Customer H|500.00
+2026-10-26|13:10:00|Computer purchase|Best Buy|-800.00
+2026-10-25|09:20:00|Product sale|Customer I|350.00
+2026-10-25|14:00:00|Business insurance|State Farm|-210.00
+2026-10-24|10:30:00|Customer payment|Michael|1300.00
+2026-10-24|16:15:00|Shipping costs|FedEx|-90.00
+2026-10-23|08:40:00|Sales revenue|Customer J|1750.00
+2026-10-23|12:50:00|Printer ink|Office Depot|-55.00
+2026-10-22|09:55:00|Service income|Customer K|900.00
+2026-10-22|15:20:00|Employee supplies|Target|-130.00
+2026-10-21|10:05:00|Product sale|Customer L|425.00
+2026-10-21|13:40:00|Software subscription|Microsoft|-30.00
+2026-10-20|08:35:00|Customer payment|Jessica|1600.00
+2026-10-20|14:45:00|Fuel expense|Exxon|-70.00
+2026-10-19|09:25:00|Sales revenue|Customer M|2100.00
+2026-10-19|12:30:00|Office furniture|IKEA|-400.00
+2026-10-18|10:40:00|Service payment|Customer N|750.00
+2026-10-18|15:10:00|Advertising|Google|-150.00
+2026-10-17|08:55:00|Product sale|Customer O|525.00
+2026-10-17|13:15:00|Maintenance|Repair Shop|-185.00
+2026-10-16|09:35:00|Customer payment|Robert|1400.00
+2026-10-16|14:25:00|Office supplies|Staples|-95.00
+2026-10-15|10:10:00|Sales revenue|Customer P|1900.00
+2026-10-15|16:30:00|Phone expense|AT&T|-85.00
+2026-10-14|08:20:00|Service income|Customer Q|650.00
+2026-10-14|12:45:00|Delivery expense|UPS|-110.00
+2026-10-13|09:50:00|Product sale|Customer R|480.00
+2026-10-13|15:35:00|Electric bill|Power Company|-160.00
+2026-10-12|10:25:00|Customer payment|Emily|1250.00
+2026-10-12|13:55:00|Cleaning service|CleanCo|-100.00
+2026-10-11|08:15:00|Sales revenue|Customer S|2300.00
+2026-10-11|14:40:00|Office equipment|Amazon|-320.00
+2026-10-10|09:05:00|Service payment|Customer T|800.00
+2026-10-10|12:35:00|Internet expense|AT&T|-95.00
+2026-10-09|10:50:00|Product sale|Customer U|550.00
+2026-10-09|15:25:00|Business supplies|Walmart|-140.00
+2026-10-08|08:25:00|Customer payment|Daniel|1700.00
+2026-10-08|13:05:00|Rent expense|Landlord|-1200.00
+2026-10-07|09:40:00|Sales revenue|Customer V|2000.00
+2026-10-07|14:55:00|Fuel expense|Shell|-60.00
+2026-10-06|10:35:00|Service income|Customer W|950.00
+2026-10-06|16:05:00|Marketing expense|Google|-125.00
+2026-10-05|08:10:00|Product sale|Customer X|375.00
+2026-10-05|12:15:00|Software expense|Adobe|-65.00
+2026-10-04|09:15:00|Customer payment|Olivia|1450.00
+2026-10-04|14:05:00|Shipping expense|FedEx|-80.00
+2026-10-03|10:45:00|Sales revenue|Customer Y|1850.00
+2026-10-03|15:50:00|Water bill|City Utilities|-55.00
+2026-10-02|08:35:00|Service payment|Customer Z|720.00
+2026-10-02|13:30:00|Office supplies|Office Depot|-90.00
+2026-10-01|09:25:00|Product sale|Customer AA|620.00
+2026-10-01|14:20:00|Insurance payment|State Farm|-220.00
+2026-09-30|10:15:00|Customer payment|James|1550.00
+2026-09-30|15:05:00|Computer repair|Tech Repair|-180.00
+2026-09-29|08:45:00|Sales revenue|Customer AB|2400.00
+2026-09-29|12:55:00|Office supplies|Amazon|-105.00
+2026-09-28|09:35:00|Service income|Customer AC|875.00
+2026-09-28|14:35:00|Electric bill|Power Company|-190.00
+2026-09-27|10:55:00|Product sale|Customer AD|430.00
+2026-09-27|16:10:00|Advertising expense|Facebook|-100.00
+2026-09-26|08:05:00|Customer payment|Sophia|1350.00
+2026-09-26|13:45:00|Fuel expense|Exxon|-75.00
+2026-09-25|09:45:00|Sales revenue|Customer AE|1950.00
+2026-09-25|15:15:00|Office furniture|IKEA|-350.00
+2026-09-24|10:05:00|Service payment|Customer AF|680.00
+2026-09-24|14:50:00|Phone bill|Verizon|-90.00
+2026-09-23|08:55:00|Product sale|Customer AG|510.00
+2026-09-23|12:40:00|Cleaning supplies|Walmart|-65.00
+2026-09-22|09:30:00|Customer payment|William|1200.00
+2026-09-22|16:20:00|Delivery costs|UPS|-95.00
+2026-09-21|10:20:00|Sales revenue|Customer AH|2150.00
+2026-09-21|13:25:00|Software subscription|Microsoft|-45.00
+2026-09-20|08:30:00|Service income|Customer AI|780.00
+2026-09-20|15:40:00|Maintenance expense|Repair Shop|-150.00
+2026-09-19|09:50:00|Product sale|Customer AJ|390.00
+2026-09-19|14:10:00|Office supplies|Staples|-85.00
+2026-09-18|10:30:00|Customer payment|Ava|1650.00
+2026-09-18|12:50:00|Internet bill|AT&T|-95.00
+2026-09-17|08:40:00|Sales revenue|Customer AK|2050.00
+2026-09-17|15:30:00|Business insurance|State Farm|-230.00
