@@ -1,5 +1,6 @@
 package com.pluralsight;
 
+
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -22,6 +23,7 @@ public class Transactions {
         this.vendor = vendor;
         this.amount = amount;
     }
+
 
     // Returns the date of the transaction.
     public LocalDate getDate() {

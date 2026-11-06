@@ -1,5 +1,7 @@
 package com.pluralsight;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.Scanner;
@@ -37,6 +39,11 @@ public class AccountLedgerApp {
                 case "P":
                     // Open the method that collects and saves a payment.
                     makePayment(myScanner);
+                    break;
+
+                case "L":
+                    // Open the Ledger menu, which also contains the Reports option.
+                    showLedger(myScanner);
                     break;
             }
 
@@ -113,5 +120,50 @@ public class AccountLedgerApp {
         );
     }
 
+    // This method adds a transaction to transactions.csv.
+    public static void saveTransaction(Transactions transaction) {
+
+        // FileWriter's true setting means new transactions are added to the end
+        // of the file instead of replacing the transactions already saved.
+        // try-with-resources automatically closes the file when finished.
+        try (FileWriter writer = new FileWriter("transactions.csv", true)) {
+
+            // Write each transaction field with a | between fields.
+            // Replace any | typed inside the description or vendor so the file
+            // can still be separated into the correct five fields when read.
+            writer.write(
+                    transaction.getDate() + "|" +
+                            transaction.getTime() + "|" +
+                            transaction.getDescription().replace("|", " ") + "|" +
+                            transaction.getVendor().replace("|", " ") + "|" +
+                            transaction.getAmount() + "\n"
+            );
+
+            System.out.println("Transaction saved successfully!");
+
+            // Catch file errors and show the reason to the user.
+        } catch (IOException e) {
+            System.out.println("Error saving transaction: " + e.getMessage());
+        }
+    }
+
+    // This method displays the Ledger menu and responds to the user's selection.
+    public static void showLedger(Scanner myScanner) {
+
+        // Keep showing the Ledger menu until the user chooses Home.
+        boolean inLedger = true;
+
+        while (inLedger) {
+
+            // Display the Ledger options, including the Reports submenu.
+            System.out.println("\n===== LEDGER =====");
+            System.out.println("A) All Transactions");
+            System.out.println("D) Deposits");
+            System.out.println("P) Payments");
+            System.out.println("R) Reports");
+            System.out.println("H) Home");
+            System.out.print("Choose an option: ");
+        }
+    }
 }
 
