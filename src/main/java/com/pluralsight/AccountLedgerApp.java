@@ -5,6 +5,7 @@ import java.time.LocalTime;
 import java.util.Scanner;
 
 public class AccountLedgerApp {
+
     public static void main(String[] args) {
         // Create a Scanner so the program can read the user's menu choices.
         Scanner myScanner = new Scanner(System.in);
@@ -32,13 +33,20 @@ public class AccountLedgerApp {
                     // Open the method that collects and saves a deposit.
                     addDeposit(myScanner);
                     break;
+
+                case "P":
+                    // Open the method that collects and saves a payment.
+                    makePayment(myScanner);
+                    break;
             }
 
         }
 
+
     }
+
     // This method asks for deposit information and saves it as a transaction.
-    public static void addDeposit(Scanner myScanner){
+    public static void addDeposit(Scanner myScanner) {
 
         System.out.println("\n===== ADD DEPOSIT =====");
 
@@ -70,8 +78,40 @@ public class AccountLedgerApp {
                 vendor,
                 amount
         );
-
-
     }
+
+    // This method collects payment information and saves the payment as a negative amount.
+    public static void makePayment(Scanner myScanner) {
+
+        System.out.println("\n===== MAKE PAYMENT =====");
+
+        // Ask what the payment was for.
+        System.out.print("Description: ");
+        String description = myScanner.nextLine();
+
+        // Ask for the name of the store, company, or person receiving the payment.
+        System.out.print("Vendor: ");
+        String vendor = myScanner.nextLine();
+
+        // Ask for the payment amount and convert it to a number.
+        System.out.print("Amount: $");
+        double amount = Double.parseDouble(myScanner.nextLine());
+
+        // Make sure the amount entered is greater than zero.
+        if (amount <= 0) {
+            System.out.println("Please enter an amount greater than zero.");
+            return;
+        }
+        // Create a Transaction object with the current date and time.
+        // The minus sign makes the amount negative to identify it as a payment.
+        Transactions transaction = new Transactions(
+                LocalDate.now(),
+                LocalTime.now().withNano(0),
+                description,
+                vendor,
+                -amount
+        );
+    }
+
 }
 
